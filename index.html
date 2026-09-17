@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ขยะพลาสติก 1 ขวด ส่งผลต่อโลกมากกว่าที่คุณคิด - โครงการรณรงค์ด้านสิ่งแวดล้อม รายวิชา Green University">
+    <title>ขยะพลาสติก 1 ขวด ส่งผลต่อโลกมากกว่าที่คุณคิด</title>
+
+    <!-- ฟอนต์จาก Google Fonts (มี fallback ใน css/style.css) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700;800&family=Sarabun:wght@400;500;700&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- ไฟล์ CSS หลักของเว็บไซต์ -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ถ้าเบราว์เซอร์ปิด JavaScript ให้แสดงเนื้อหาทันที (ไม่ต้องรอ animation) -->
+    <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+
+<!-- ============================================
+     SECTION 1 : HERO (หน้าแรกสุด ดึงความสนใจ)
+============================================= -->
+<header class="hero" id="top">
+    <div class="hero__content reveal">
+        <p class="hero__badge">โครงการรณรงค์ด้านสิ่งแวดล้อม</p>
+        <h1 class="hero__title">ขยะพลาสติก 1 ขวด<br>ส่งผลต่อโลก<span class="hero__accent">มากกว่าที่คุณคิด</span></h1>
+        <p class="hero__subtitle">
+            ขวดน้ำพลาสติกที่คุณใช้เพียงไม่กี่นาที จะต้องใช้เวลาย่อยสลายเกือบครึ่งพันปี
+            และตลอดวงจรชีวิตของมัน กลับปล่อยก๊าซเรือนกระจกที่ทำให้โลกเดือดไปด้วย
+        </p>
+        <a href="#problem" class="button button--primary">เริ่มเรียนรู้</a>
+    </div>
+
+    <!-- ภาพขวดพลาสติก (วาดด้วย SVG เรียบง่าย ไม่ต้องใช้ไฟล์รูป) -->
+    <div class="hero__visual" aria-hidden="true">
+        <svg class="hero__bottle" viewBox="0 0 120 240" width="120" height="240" role="img" aria-label="ภาพวาดขวดพลาสติก">
+            <rect x="45" y="20" width="30" height="18" rx="3" fill="#40916C" />
+            <rect x="50" y="38" width="20" height="30" rx="2" fill="#74C69D" />
+            <path d="M42 70 h36 l6 150 a6 6 0 0 1 -6 6 H42 a6 6 0 0 1 -6 -6 Z" fill="#B7E4C7" stroke="#2D6A4F" stroke-width="2" />
+            <rect x="40" y="178" width="40" height="8" rx="2" fill="#2D6A4F" />
+            <text x="60" y="140" text-anchor="middle" font-size="14" fill="#2D6A4F" font-family="Prompt, sans-serif">น้ำ</text>
+        </svg>
+        <div class="hero__leaf hero__leaf--one" aria-hidden="true"></div>
+        <div class="hero__leaf hero__leaf--two" aria-hidden="true"></div>
+    </div>
+</header>
+
+<main>
+
+    <!-- ============================================
+         SECTION 2 : ปัญหาขยะพลาสติก
+    ============================================= -->
+    <section class="section" id="problem">
+        <div class="container">
+            <h2 class="section__title reveal">ปัญหาขยะพลาสติก</h2>
+            <p class="section__lead reveal">
+                ทุก ๆ วัน เราใช้พลาสติกโดยไม่ทันรู้ตัว ทั้งถุง ขวด หลอด และห่ออาหาร
+                ส่วนใหญ่ใช้เพียงครั้งเดียว... แล้วก็ถูกทิ้งไปตลอดกาล
+            </p>
+
+            <!-- ตัวเลขสถิติที่ทำให้เห็นภาพชัดขึ้น -->
+            <div class="stats stagger">
+                <div class="stat-card reveal">
+                    <span class="stat-card__number">2 ล้านตัน</span>
+                    <p class="stat-card__label">ขยะพลาสติกในประเทศไทยต่อปี</p>
+                </div>
+                <div class="stat-card reveal">
+                    <span class="stat-card__number">450 ปี</span>
+                    <p class="stat-card__label">เวลาที่ขวดพลาสติกใช้ย่อยสลาย</p>
+                </div>
+                <div class="stat-card reveal">
+                    <span class="stat-card__number">น้อยกว่า 18%</span>
+                    <p class="stat-card__label">ของขยะพลาสติกที่ถูกรีไซเคิลจริง</p>
+                </div>
+            </div>
+
+            <p class="section__note">
+                ขวดพลาสติกที่เราใช้แป๊บเดียว กลายเป็นขยะที่อยู่บนโลกนานกว่าอายุคนรุ่นเรา หลายเท่า
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 3 : พลาสติกกับภาวะโลกเดือด
+    ============================================= -->
+    <section class="section section--tint" id="climate">
+        <div class="container">
+            <h2 class="section__title reveal">พลาสติกเกี่ยวข้องกับภาวะโลกเดือดอย่างไร</h2>
+            <p class="section__lead reveal">
+                ขวดพลาสติกไม่ใช่แค่ "ขยะ" เพราะตั้งแต่เริ่มผลิตจนถึงถูกกำจัด
+                ทุกขั้นตอนได้ปล่อยก๊าซเรือนกระจกมาแล้ว
+            </p>
+
+            <!-- วงจรชีวิตของขวดพลาสติก 4 ขั้นตอน -->
+            <div class="lifecycle stagger">
+                <article class="step-card reveal">
+                    <span class="step-card__num">1</span>
+                    <h3 class="step-card__title">การผลิต</h3>
+                    <p class="step-card__text">พลาสติกผลิตจากน้ำมันดิบ การกลั่นและขึ้นรูปปล่อยก๊าซคาร์บอนไดออกไซด์มหาศาล</p>
+                </article>
+                <article class="step-card reveal">
+                    <span class="step-card__num">2</span>
+                    <h3 class="step-card__title">การขนส่ง</h3>
+                    <p class="step-card__text">ขวดน้ำถูกขนส่งด้วยรถยนต์ เรือ และเครื่องบิน ยิ่งไกลยิ่งใช้เชื้อเพลิงมาก</p>
+                </article>
+                <article class="step-card reveal">
+                    <span class="step-card__num">3</span>
+                    <h3 class="step-card__title">การใช้งาน</h3>
+                    <p class="step-card__text">ถูกใช้เพียงไม่กี่นาที ก่อนกลายเป็นขยะที่อยู่กับโลกต่อไปอีกหลายร้อยปี</p>
+                </article>
+                <article class="step-card step-card--warn reveal">
+                    <span class="step-card__num">4</span>
+                    <h3 class="step-card__title">การกำจัด</h3>
+                    <p class="step-card__text">เผาทำลายปล่อยก๊าซพิษ ฝังกลบไม่ย่อยสลายและปล่อยก๊าซมีเทนเป็นเวลานาน</p>
+                </article>
+            </div>
+
+            <p class="section__highlight reveal">
+                หมายความว่า ขวดพลาสติกทุกขวดที่เราใช้ คือส่วนหนึ่งของปัญหาภาวะโลกเดือด
+                ที่ถูกเติมเพิ่มทุกวัน ไม่ใช่แค่ปัญหาขยะล้นเมืองเท่านั้น
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 4 : ผลกระทบที่เกิดขึ้น
+    ============================================= -->
+    <section class="section" id="impact">
+        <div class="container">
+            <h2 class="section__title reveal">ผลกระทบที่เกิดขึ้น</h2>
+            <p class="section__lead reveal">ผลของพฤติกรรมเล็ก ๆ หนึ่งขวดต่อวัน เมื่อสะสมในคนจำนวนมาก นำไปสู่ผลกระทบใหญ่หลวง</p>
+
+            <div class="impact-grid stagger">
+                <article class="impact-card reveal">
+                    <h3 class="impact-card__title">ต่อสิ่งแวดล้อม</h3>
+                    <p class="impact-card__text">
+                        ขวดพลาสติกหลุดรอดลงสู่ทะเล สัตว์ทะเลกินเข้าไปจนได้รับบาดเจ็บ
+                        และไมโครพลาสติกเล็กละเอียดเข้าสู่อาหารที่เรารับประทาน
+                    </p>
+                </article>
+                <article class="impact-card reveal">
+                    <h3 class="impact-card__title">ต่อมหาวิทยาลัย</h3>
+                    <p class="impact-card__text">
+                        ทุกวันบนมหาวิทยาลัยมีขวดพลาสติกหลักหมื่นชิ้น ต้องใช้ทรัพยากร
+                        คน และงบประมาณ ในการเก็บ ขน และกำจัด
+                    </p>
+                </article>
+                <article class="impact-card impact-card--warn reveal">
+                    <h3 class="impact-card__title">ต่อคนรุ่นต่อไป</h3>
+                    <p class="impact-card__text">
+                        ขยะที่สะสมหลายสิบปีและภาวะโลกร้อนที่รุนแรงขึ้น
+                        กลายเป็นภาระที่คนรุ่นต่อไปต้องแบกรับ หากเราไม่เริ่มเปลี่ยนแปลงตั้งแต่วันนี้
+                    </p>
+                </article>
+            </div>
+
+            <!-- ตัวเลขเปรียบเทียบให้เห็นพลังของการร่วมมือกัน -->
+            <div class="compare stagger">
+                <div class="compare__box reveal">
+                    <span class="compare__number">1 × 365</span>
+                    <p class="compare__label">1 คน เลิกใช้ขวดพลาสติกวันละ 1 ขวด = ลดขวด 365 ขวด/ปี</p>
+                </div>
+                <div class="compare__box compare__box--highlight reveal">
+                    <span class="compare__number">10,000 × 365</span>
+                    <p class="compare__label">10,000 คน ทำพร้อมกัน = ลดขวดได้ถึง 3.65 ล้านขวด/ปี</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 5 : วิธีที่ทุกคนช่วยได้
+    ============================================= -->
+    <section class="section section--tint" id="solution">
+        <div class="container">
+            <h2 class="section__title reveal">วิธีที่ทุกคนช่วยได้</h2>
+            <p class="section__lead reveal">ไม่ต้องเปลี่ยนอะไรมาก แค่เริ่มจากกิจวัตรเล็ก ๆ ในชีวิตประจำวัน</p>
+
+            <div class="steps stagger">
+                <article class="step-solution reveal">
+                    <span class="step-solution__icon" aria-hidden="true">💧</span>
+                    <h3 class="step-solution__title">พกขวดน้ำส่วนตัว</h3>
+                    <p class="step-solution__text">เติมน้ำจากเครื่องกรองในมหาวิทยาลัย ไม่ต้องซื้อน้ำขวดพลาสติกทุกวัน</p>
+                </article>
+                <article class="step-solution reveal">
+                    <span class="step-solution__icon" aria-hidden="true">🛍️</span>
+                    <h3 class="step-solution__title">ลดพลาสติกใช้ครั้งเดียว</h3>
+                    <p class="step-solution__text">ปฏิเสธหลอด ถุงพลาสติก และบรรจุภัณฑ์ฟุ่มเฟือยเมื่อไม่จำเป็น</p>
+                </article>
+                <article class="step-solution reveal">
+                    <span class="step-solution__icon" aria-hidden="true">♻️</span>
+                    <h3 class="step-solution__title">คัดแยกขยะก่อนทิ้ง</h3>
+                    <p class="step-solution__text">พลาสติกที่สะอาดและคัดแยกถูกต้อง จะมีโอกาสถูกรีไซเคิลสูงขึ้น</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 6 : CALL TO ACTION
+    ============================================= -->
+    <section class="cta" id="cta">
+        <div class="container">
+            <h2 class="cta__title reveal">เริ่มพกขวดน้ำส่วนตัวตั้งแต่วันนี้</h2>
+            <p class="cta__text reveal">
+                การเปลี่ยนแปลงเล็ก ๆ ของแต่ละคน เมื่อรวมกันเป็นคนนับพัน
+                จะกลายเป็นพลังที่สร้างความเปลี่ยนแปลงให้โลกได้จริง
+            </p>
+            <a href="#top" class="button button--light reveal">ฉันจะเริ่มตั้งแต่วันนี้</a>
+            <p class="cta__note reveal">แล้วบอกต่อเพื่อนรอบตัวด้วยนะ</p>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 7 : ENDING SCENE (บทส่งท้าย)
+         ตอนจบแบบสารคดีสั้น สร้างอารมณ์ทรงพลัง
+    ============================================= -->
+    <section class="ending" id="ending">
+        <!-- ชั้นพื้นหลังที่ค่อย ๆ มืดลง (แสดงผลผ่าน CSS) -->
+        <div class="ending__overlay" aria-hidden="true"></div>
+
+        <div class="ending__content reveal">
+            <p class="ending__kicker">บทส่งท้าย</p>
+            <p class="ending__line">การไม่ใช้ขวดพลาสติกเพียง 1 ขวด</p>
+            <p class="ending__line">อาจเป็นสิ่งเล็กที่สุดที่คุณทำในวันนี้</p>
+            <p class="ending__line">แต่สำหรับโลกแล้ว</p>
+            <p class="ending__line ending__line--strong">มันคือจุดเริ่มต้นของความเปลี่ยนแปลง</p>
+            <p class="ending__closing">โลกไม่ได้ต้องการคนที่สมบูรณ์แบบ</p>
+            <p class="ending__closing ending__closing--accent">แต่ต้องการคนธรรมดาที่เริ่มลงมือทำ</p>
+        </div>
+    </section>
+
+</main>
+
+<!-- ============================================
+         SECTION 8 : FOOTER
+    ============================================= -->
+<footer class="footer">
+    <div class="container">
+        <p class="footer__project">โครงการ "ขยะพลาสติก 1 ขวด ส่งผลต่อโลกมากกว่าที่คุณคิด"</p>
+        <p class="footer__course">จัดทำเพื่อประกอบการเรียนรายวิชา Green University</p>
+        <p class="footer__credit">แหล่งข้อมูลอ้างอิง: กรมส่งเสริมคุณภาพสิ่งแวดล้อม, NOAA, IPCC, UN Environment Programme</p>
+    </div>
+</footer>
+
+<!-- สคริปต์เล็ก ๆ เปิด Animation เมื่อผู้ใช้เลื่อนมาถึงแต่ละ Section -->
+<script>
+    // เคารพผู้ใช้ที่ตั้งค่าให้ลดการเคลื่อนไหวของระบบปฏิบัติการ
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // เลือกทุก element ที่มี class "reveal"
+    const revealElements = document.querySelectorAll('.reveal');
+
+    // ถ้าเบราว์เซอร์เก่าหรือผู้ใช้ลดการเคลื่อนไหว ให้แสดงเนื้อหาทันที
+    if (reduceMotion || !('IntersectionObserver' in window)) {
+        revealElements.forEach(function (el) {
+            el.classList.add('is-visible');
+        });
+    } else {
+        // สร้างตัวตรวจจับว่า element เข้ามาอยู่ในหน้าจอแล้วหรือยัง
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target); // เล่นแค่ครั้งเดียว
+                }
+            });
+        }, { threshold: 0.15 });
+
+        revealElements.forEach(function (el) {
+            observer.observe(el);
+        });
+    }
+</script>
+
+</body>
+</html>
