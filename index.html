@@ -9,7 +9,7 @@
     <!-- ฟอนต์จาก Google Fonts (มี fallback ใน css/style.css) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700;800&family=Sarabun:wght@400;500;700&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- ไฟล์ CSS หลักของเว็บไซต์ -->
     <link rel="stylesheet" href="css/style.css">
@@ -34,7 +34,7 @@
     </div>
 
     <!-- ภาพขวดพลาสติก (วาดด้วย SVG เรียบง่าย ไม่ต้องใช้ไฟล์รูป) -->
-    <div class="hero__visual" aria-hidden="true">
+    <div class="hero__visual parallax" aria-hidden="true" data-speed="0.12">
         <svg class="hero__bottle" viewBox="0 0 120 240" width="120" height="240" role="img" aria-label="ภาพวาดขวดพลาสติก">
             <rect x="45" y="20" width="30" height="18" rx="3" fill="#40916C" />
             <rect x="50" y="38" width="20" height="30" rx="2" fill="#74C69D" />
@@ -220,12 +220,11 @@
     <section class="ending" id="ending">
         <div class="ending__content reveal">
             <p class="ending__kicker">บทส่งท้าย</p>
-            <p class="ending__line">การไม่ใช้ขวดพลาสติกเพียง 1 ขวด</p>
-            <p class="ending__line">อาจเป็นสิ่งเล็กที่สุดที่คุณทำในวันนี้</p>
-            <p class="ending__line">แต่สำหรับโลกแล้ว</p>
-            <p class="ending__line ending__line--strong">มันคือจุดเริ่มต้นของความเปลี่ยนแปลง</p>
-            <p class="ending__closing">โลกไม่ได้ต้องการคนที่สมบูรณ์แบบ</p>
-            <p class="ending__closing ending__closing--accent">แต่ต้องการคนธรรมดาที่เริ่มลงมือทำ</p>
+            <p class="ending__line">คุณอาจเปลี่ยนโลกไม่ได้ในวันนี้</p>
+            <p class="ending__line">แต่คุณเลือกได้</p>
+            <p class="ending__line ending__line--strong">ว่าจะเพิ่มขยะอีก 1 ขวด หรือไม่</p>
+            <p class="ending__divider" aria-hidden="true"></p>
+            <p class="ending__closing ending__closing--accent">Future starts with small choices.</p>
         </div>
 
         <!-- เอฟเฟกต์ฉากจบแบบภาพยนตร์: แสงกลางเวที + แถบเปิดฉาก -->
@@ -275,6 +274,30 @@
         revealElements.forEach(function (el) {
             observer.observe(el);
         });
+    }
+
+    // ---- พารัลแลกซ์เบา ๆ (เลื่อนช้ากว่าหน้ากระดาษเล็กน้อย) ----
+    const parallaxElements = document.querySelectorAll('.parallax');
+    if (!reduceMotion && parallaxElements.length) {
+        let ticking = false;
+
+        function parallaxMove() {
+            const y = window.pageYOffset;
+            parallaxElements.forEach(function (el) {
+                const speed = parseFloat(el.dataset.speed || '0.2');
+                el.style.transform = 'translate3d(0,' + (y * -speed) + 'px,0)';
+            });
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', function () {
+            if (!ticking) {
+                window.requestAnimationFrame(parallaxMove);
+                ticking = true;
+            }
+        }, { passive: true });
+
+        parallaxMove();
     }
 </script>
 
